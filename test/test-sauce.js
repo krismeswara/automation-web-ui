@@ -35,7 +35,7 @@ describe('Saucedemo UI Automation', function () {
       dropdown
     );
 
-    // Tunggu sampai produk pertama betul-betul "Sauce Labs Backpack"
+    
     await driver.wait(async () => {
       const productElements = await driver.findElements(By.className('inventory_item_name'));
       if (productElements.length === 0) return false;
@@ -44,7 +44,7 @@ describe('Saucedemo UI Automation', function () {
       return firstText === 'Sauce Labs Backpack';
     }, 10000, 'Produk pertama tidak pernah jadi "Sauce Labs Backpack"');
 
-    // Ambil lagi dan lakukan assertion
+    
     const productElements = await driver.findElements(By.className('inventory_item_name'));
     const firstProductName = await productElements[0].getText();
     console.log("✅ Produk pertama setelah sortir:", firstProductName);
