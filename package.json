@@ -1,0 +1,19 @@
+{
+  "name": "saucedemo-ui-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/*.js",
+    "jalanin-mochawesome": "mocha ./test/*.js --reporter mochawesome",
+    "jalanin-simple-html": "mocha ./test/*.js --reporter mocha-simple-html-reporter"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.0.0",
+    "mocha-simple-html-reporter": "^1.0.1",
+    "mochawesome": "^7.1.3",
+    "selenium-webdriver": "^4.10.0"
+  }
+}
