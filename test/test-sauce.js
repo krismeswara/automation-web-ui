@@ -47,9 +47,9 @@ describe('Saucedemo - Sorting Z to A', function () {
       actualProductNames.push(name);
     }
 
-    console.log('📦 Produk tampil:', actualProductNames);
+    console.log('Produk tampil:', actualProductNames);
 
-    // Bandingkan dengan urutan yang diharapkan
+   
     assert.deepStrictEqual(actualProductNames, expectedProductOrder);
   });
 });
